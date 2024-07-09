@@ -82,9 +82,6 @@ function setup(done) {
   createFile(paths.styles.src, 'app.scss', '// Sass entry point');
   createFile(paths.styles.src, 'base.scss', '// Base styles');
   
-  // イメージディレクトリとダミーSVGファイル
-  createFile(paths.images.srcDir, 'dummy.svg', '<svg xmlns="http://www.w3.org/2000/svg"></svg>');
-  
   // ビュー、モジュール、コモンのHTMLとEJS設定
   const indexContent = `
   <%
@@ -143,7 +140,7 @@ function setup(done) {
   createFile(path.join(paths.html.src, 'common'), '_footer.ejs', footerContent);
   createFile(path.join(paths.html.src, 'modules'), '_mainVisual.ejs', '<div></div>');
 
-// dist/public/images ディレクトリの作成
+// dist/public/images ディレクトリの作成 imageファイルはここで直接配置する
   createFile(paths.images.dest, 'dummy.svg', '<svg xmlns="http://www.w3.org/2000/svg"></svg>');
 
   done(); // タスク完了をGulpに通知
