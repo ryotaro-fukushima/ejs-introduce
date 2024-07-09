@@ -1,0 +1,23 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "WEB制作テンプレート",
+  "scripts": {
+    "start": "gulp"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-encoding": "^3.0.0",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettify": "^0.5.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
