@@ -104,8 +104,8 @@ function setup(done) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WordPressで動的に入れる</title>
-        <link rel="stylesheet" href="./public/css/base.css">
-        <link rel="stylesheet" href="./public/css/app.css">
+        <link rel="stylesheet" href="/public/css/base.css">
+        <link rel="stylesheet" href="/public/css/app.css">
     </head>
 
     <% if(page.bodyClass == 'home'){ _%>
@@ -126,9 +126,9 @@ function setup(done) {
         <p>&copy; 9999</p>
     </footer>
 
-    <script src="./public/js/main.js"></script>
+    <script src="/public/js/main.js"></script>
     <% if(page.bodyClass == 'home'){ _%>
-    <script src="./public/js/home.js"></script>
+    <script src="/public/js/home.js"></script>
     <% } _%>
     </body>
     </html>
