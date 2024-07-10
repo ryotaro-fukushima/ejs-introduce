@@ -151,7 +151,7 @@ function setup(done) {
 // Ejs Task
 // ----------------------------------------
 function ejsTask() {
-  return gulp.src([paths.html.views + '*.ejs', '!' + paths.html.views + '**/_*.ejs']) 
+  return gulp.src([paths.html.views + '**/*.ejs', '!' + paths.html.views + '**/_*.ejs']) 
     .pipe(plumber({ errorHandler: handleError })) // エラーハンドリング
     .pipe(ejs()) // EJSをHTMLに変換
     .pipe(prettify(htmlOptions)) // HTMLを整形
