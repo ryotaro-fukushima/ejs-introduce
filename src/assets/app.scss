@@ -1,7 +1,4 @@
 // Sass entry point
 // main.scss
-@use 'sass/foundation/index' as foundation;
-@use 'sass/layout/index' as layout;
-@use 'sass/object/project/index' as project;
-@use 'sass/object/component/index' as component;
+@use 'sass/index' as *;
 
