@@ -1,0 +1,14 @@
+.l-header {
+    display: flex;
+    height: 60px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+        width: 120px;
+        line-height: 1px;
+        padding: 10px 0;
+        display: block;
+    }
+}

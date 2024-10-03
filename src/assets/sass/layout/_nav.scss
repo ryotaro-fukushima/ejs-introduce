@@ -1,0 +1,12 @@
+.l-nav-list {
+    display: flex;
+    padding: 10px 0;
+
+    &__item {
+        margin-left: 30px;
+    }
+
+    &__item:hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,49 @@
+<% const page={ bodyClass: 'home' , mainVisual: '/public/images/mainvisual.jpg' ,
+  aboutImage: '/public/images/about.jpg' , profile: { name: 'KAKERU MIYAUCHI' , description:
+  `テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト` }, bicycles: [ {
+  image: '/public/images/bicycle1.jpg' , title: 'タイトルタイトル' , description: 'テキストテキストテキスト' }, {
+  image: '/public/images/bicycle2.jpg' , title: 'タイトルタイトル' , description: 'テキストテキストテキスト' }, {
+  image: '/public/images/bicycle3.jpg' , title: 'タイトルタイトル' , description: 'テキストテキストテキスト' } ] } %>
+
+  <%- include('../common/_head', { page: page }) %>
+    <%- include('../common/_header', { page: page }) %>
+
+      <main class="l-main">
+        <div class="p-mainvisual">
+          <img class="p-mainvisual__img" src="<%= page.mainVisual %>" alt="bicycle">
+        </div>
+
+        <section id="about" class="l-wrapper">
+          <h2 class="c-title">About</h2>
+          <div class="p-profile">
+            <img class="p-profile__img" src="<%= page.aboutImage %>" alt="author">
+            <div class="p-profile__text">
+              <h3 class="c-contents-title">
+                <%= page.profile.name %>
+              </h3>
+              <p class="c-contents-para">
+                <%= page.profile.description.replace(/\n/g, '<br>' ) %>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="bicycle" class="l-wrapper">
+          <h2 class="c-title">Bicycle</h2>
+          <ul class="p-contents-list">
+            <% page.bicycles.forEach(function(bicycle) { %>
+              <li class="p-contents-list__item">
+                <img class="p-contents-list__item-img" src="<%= bicycle.image %>" alt="<%= bicycle.title %>">
+                <h3 class="c-contents-title">
+                  <%= bicycle.title %>
+                </h3>
+                <p class="c-contents-para">
+                  <%= bicycle.description %>
+                </p>
+              </li>
+              <% }) %>
+          </ul>
+        </section>
+      </main>
+
+      <%- include('../common/_footer', { page: page }) %>

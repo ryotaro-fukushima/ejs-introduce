@@ -1,0 +1,21 @@
+.p-contents-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .p-contents-list {
+        flex-direction: column;
+
+        &__item {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
