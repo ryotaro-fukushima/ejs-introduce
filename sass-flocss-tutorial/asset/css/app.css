@@ -74,7 +74,7 @@ li {
   max-width: 1920px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .p-mainvisual__img {
     height: calc(100vh - 60px);
   }
@@ -94,7 +94,7 @@ li {
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .p-profile {
     flex-direction: column;
   }
@@ -110,7 +110,7 @@ li {
   width: 32%;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .p-contents-list {
     flex-direction: column;
   }
